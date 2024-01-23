@@ -1,2 +1,17 @@
-# FileContentUtility
-File content filtering utility
+# File content filtering utility
+
+[FileContentFilterUtility.jar](https://drive.google.com/uc?export=download&id=1wde-EaYd8rRLrAppztA1MC_E_9Ga1UOO)
+
+Пример использования: java -jar FileContentFilterUtility.jar -s in1.txt in2.txt 
+
+Опции:
+ - **-s**               Показать краткую статистику (количество элементов, записанных в выходные файлы). 
+ - **-f**               Показать полную статистику (минимум, максимум, сумма и среднее для чисел, минимальная, максимальная длины строк).
+ - **-o <путь>**        Задать путь для выходных файлов (по умолчанию - текущая папка).
+ - **-p <префикс>**     Добавить префикс к именам выходных файлов (файлы по умолчанию для вывода: integers.txt, floats.txt и strings.txt).
+ - **-a**               Включить режим добавления данных к уже существующим файлам с результатами.
+
+Детали реализации:
+  - Версия Java: "21.0.1"
+  - Пакеты  java.util и java.io
+  - Консольная компиляция с помощью javac, jar
